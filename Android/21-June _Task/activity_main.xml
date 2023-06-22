@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:background="@drawable/log"/>
+
+    <TextView
+        android:id="@+id/tx1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Details"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Student name"
+        android:layout_below="@+id/tx1"/>
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Student Password"
+        android:layout_below="@+id/edt1"/>
+
+    <EditText
+        android:id="@+id/edt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Student  Adress"
+        android:layout_below="@+id/edt2"/>
+
+
+
+    <RadioButton
+        android:id="@+id/rb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MALE"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/edt3"/>
+
+
+    <RadioButton
+        android:id="@+id/rb2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FEMALE"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/rb1"/>
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/rb2"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </RadioGroup>
+
+</RelativeLayout>
