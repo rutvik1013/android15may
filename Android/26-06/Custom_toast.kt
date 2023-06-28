@@ -1,4 +1,6 @@
-package com.example.layouts
+
+
+    package com.example.layouts
 
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
@@ -24,11 +26,13 @@ class CustomtoastEx : AppCompatActivity()
         btn1.setOnClickListener {
 
             var inflater = LayoutInflater.from(applicationContext)
-            var view =  inflater.inflate(R.layout.activity_customtoast_ex,null)
+            var view = inflater.inflate(R.layout.activity_custom_toast,null)
             var toast = Toast(this)
-            toast.view=view
-            toast.duration=Toast.LENGTH_LONG
+            toast.view = view
+            toast.duration = Toast.LENGTH_LONG
             toast.show()
+        }
+        
         }
 
     }
