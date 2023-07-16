@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Modulefour</string>
+
+    <string-array name="list">
+
+        <item>Rutvik</item>
+        <item>Dhaval</item>
+        <item>Jayraj</item>
+        <item>Bhavesh</item>
+        <item>Bhavin</item>
+        <item>Ronak</item>
+        <item>Ruturaj</item>
+        <item>Vivek</item>
+        <item>Yagnik</item>
+        <item>Narendra</item>
+
+
+    </string-array>
+
+</resources>
