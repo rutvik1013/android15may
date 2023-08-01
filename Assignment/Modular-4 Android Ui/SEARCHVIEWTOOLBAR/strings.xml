@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">searchviewintoolbar</string>
+
+    <string-array name="name_array">
+
+        <item>Rutvik</item>
+        <item>Dhaval</item>
+        <item>Jayraj</item>
+        <item>Jaydip</item>
+        <item>Bhavesh</item>
+        <item>Narendra</item>
+        <item>Dhairya</item>
+        <item>Ronak</item>
+        <item>Ruturaj</item>
+        <item>Bhavin</item>
+
+    </string-array>
+</resources>
