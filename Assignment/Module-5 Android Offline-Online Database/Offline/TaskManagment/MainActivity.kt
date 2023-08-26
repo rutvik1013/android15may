@@ -41,15 +41,7 @@ class MainActivity : AppCompatActivity() {
             i.putExtra("id",user)
             startActivity(i)
         }
-        fun setStatusBarColor(color:Int)
-        {
-            var window=this.window
-
-            if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP)
-            {
-                window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-                window.statusBarColor=color
-            }
+     
         }
 
     }
