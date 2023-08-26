@@ -34,15 +34,8 @@ class MainActivity : AppCompatActivity() {
         binding.insert.setOnClickListener {
             startActivity(Intent(applicationContext,Addactivity::class.java))
         }
-        binding.list.setOnItemClickListener { adapterview:AdapterView<*>,view:View,i:Int,l:Long->
-            var user=adapter.getItem(i).toString()
-
-            var i=Intent(this,UpdateActivity::class.java)
-            i.putExtra("id",user)
-            startActivity(i)
-        }
      
-        }
+        
 
     }
 
