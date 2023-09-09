@@ -29,37 +29,41 @@ class MyAdapter(var context: Context,var list: MutableList<Model>) : BaseAdapter
 
     @SuppressLint("MissingInflatedId")
     override fun getView(position: Int, ConvertView: View?, parent: ViewGroup?): View {
-        var inflater : LayoutInflater = LayoutInflater.from(context)
-        var view = inflater.inflate(R.layout.design,parent,false)
+        var inflater: LayoutInflater = LayoutInflater.from(context)
+        var view = inflater.inflate(R.layout.design, parent, false)
 
-        var name : TextView = view.findViewById(R.id.task_name)
-        var img : ImageView= view.findViewById(R.id.task_img)
-        var rl : RelativeLayout = view.findViewById(R.id.rl)
 
-        name.setText(list.get(position).name)
+
+        var image:ImageView=view.findViewById(R.id.img)
+        var texttask:TextView=view.findViewById(R.id.task_name)
+        var textdes:TextView=view.findViewById(R.id.task_des)
+        var txtpriority=view.findViewById<View>(R.id.priority)
+
+        texttask.setText(list.get(position).name)
+        textdes.setText(list.get(position).description)
 
         if (list.get(position).status=="A")
         {
-            img.setImageResource(R.drawable.countdown)
+            image.setImageResource(R.drawable.countdown)
         }
         else if (list.get(position).status=="B")
         {
-            img.setImageResource(R.drawable.correct)
+            image.setImageResource(R.drawable.correct)
         }
-
         if (list.get(position).priority=="high")
         {
-            rl.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#FF0000")))
+            txtpriority.setBackgroundColor(Color.RED)
         }
         else if (list.get(position).priority=="avg")
         {
-            rl.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#0000FF")))
+            txtpriority.setBackgroundColor(Color.BLUE)
         }
         else if (list.get(position).priority=="low")
         {
-            rl.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#00FF00")))
+            txtpriority.setBackgroundColor(Color.GREEN)
         }
+
+
         return view
     }
-
 }
