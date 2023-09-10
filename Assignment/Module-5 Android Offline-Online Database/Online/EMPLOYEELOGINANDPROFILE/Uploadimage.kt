@@ -47,12 +47,13 @@ class Uploadimage : AppCompatActivity()
 
             val name = binding.edt1.getText().toString()
             val path = getPath(filepath)
-            MultipartUploadRequest(this, "https://vyasprakruti.000webhostapp.com/serverimage/upload.php")
+            MultipartUploadRequest(this, "https://rutvikbabariya.000webhostapp.com/image/upload_Assign.php")
                 .addFileToUpload(path, "url")
                 .addParameter("name", name)
                 .setMaxRetries(2)
                 .startUpload()
             Toast.makeText(this@Uploadimage, "success", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(applicationContext,ViewActivity::class.java))
 
         }
 
