@@ -29,8 +29,7 @@ class MainActivity : AppCompatActivity() {
 
             var stringrequest:StringRequest=object :StringRequest(Request.Method.POST,"https://rutvikbabariya.000webhostapp.com/API2/insert_assignment.php",Response.Listener {
                 Toast.makeText(applicationContext, "Employee Data Inserted", Toast.LENGTH_SHORT).show()
-
-                startActivity(Intent(applicationContext,ViewActivity::class.java))
+                startActivity(Intent(applicationContext,Uploadimage::class.java))
             },Response.ErrorListener {
                 Toast.makeText(applicationContext, "Not Connected", Toast.LENGTH_SHORT).show()
 
