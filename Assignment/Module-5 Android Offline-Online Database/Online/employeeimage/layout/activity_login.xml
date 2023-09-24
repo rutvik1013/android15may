@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#6A1B9A"
+        android:gravity="center"
+        android:layout_margin="20dp"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="#00695C"
+        app:startIconDrawable="@drawable/baseline_mark_email_read_24"
+        app:startIconTint="#0277BD"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="#00695C"
+        app:startIconTint="#0277BD"
+        app:passwordToggleEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:backgroundTint="#00695C"
+        android:textColor="@color/white"
+        android:layout_margin="19dp"/>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#283593"
+        android:text="Click here and login"
+        android:textStyle="italic"/>
+
+</LinearLayout>
