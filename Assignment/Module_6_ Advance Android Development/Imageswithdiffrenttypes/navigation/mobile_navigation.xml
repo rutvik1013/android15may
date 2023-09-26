@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_blink">
+
+
+    <fragment
+        android:id="@+id/nav_blink"
+        android:name="com.example.framzoomblink.FragmentBlink"
+        android:label="Blink"
+        tools:layout="@layout/fragment_blink"/>
+
+    <fragment
+        android:id="@+id/nav_rotete"
+        android:name="com.example.framzoomblink.FragmentRotate"
+        android:label="Rotate"
+        tools:layout="@layout/fragment_rotate"/>
+
+    <fragment
+        android:id="@+id/nav_move"
+        android:name="com.example.framzoomblink.FragmentMove"
+        android:label="Move"
+        tools:layout="@layout/fragment_move"/>
+
+    <fragment
+        android:id="@+id/nav_zoom_inout"
+        android:name="com.example.framzoomblink.FragmentZoom_in"
+        android:label="Zoom_in-Out"
+        tools:layout="@layout/fragment_zoom_in"/>
+
+    <fragment
+        android:id="@+id/nav_frambyfram"
+        android:name="com.example.framzoomblink.Fragment_FrambyFram"
+        android:label="Fram By Fram"
+        tools:layout="@layout/fragment__framby_fram"/>
+
+</navigation>
