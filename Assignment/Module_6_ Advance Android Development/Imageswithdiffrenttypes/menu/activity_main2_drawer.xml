@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_blink"
+            android:icon="@drawable/baseline_image_24"
+            android:title="Blink Image" />
+        <item
+            android:id="@+id/nav_rotete"
+            android:icon="@drawable/baseline_stay_primary_landscape_24"
+            android:title="Rotate Image" />
+        <item
+            android:id="@+id/nav_move"
+            android:icon="@drawable/baseline_move_up_24"
+            android:title="Move Image" />
+        <item
+            android:id="@+id/nav_zoom_inout"
+            android:icon="@drawable/baseline_zoom_in_map_24"
+            android:title="Zoom"/>
+
+
+        <item
+            android:id="@+id/nav_frambyfram"
+            android:icon="@drawable/baseline_filter_frames_24"
+            android:title="Frame By Frame"/>
+
+    </group>
+</menu>
