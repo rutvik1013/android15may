@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearverSong">
+
+
+
+    <TextView
+        android:id="@+id/idTVExtracter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Play Audio from URL"
+        android:textAlignment="center"
+        android:textColor="#00695C"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <ImageButton
+        android:id="@+id/idIBPlay"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/baseline_play_arrow_24"
+        app:tint="@color/black" />
+
+
+    <ImageButton
+        android:id="@+id/idIBPause"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/idIBPlay"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/baseline_pause_24"
+         />
+
+</LinearLayout>
